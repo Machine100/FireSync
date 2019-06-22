@@ -9,7 +9,7 @@ signupForm.addEventListener('submit', e => {
 	 e.preventDefault();
 	 //getuserinfo
 	 const email = signupForm['signup-email'].value;
-	 const password = signupForm['signupForm'].value;
+	 const password = signupForm['signup-password'].value;
 	 console.log(email, password)
 })
 
