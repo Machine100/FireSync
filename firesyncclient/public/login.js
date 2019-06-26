@@ -4,7 +4,8 @@ const createForm = document.querySelector('#create-form'); // why is this variab
 const createbutton = document.getElementById('createButton'); // and this one is lowercase?
 const logoutbutton = document.getElementById('logoutButton');
 const consolecreds = document.getElementById('consoleCreds');
-var userInfo;
+var credential;
+var user;
 
 loginForm.addEventListener('submit', e => {
 	 e.preventDefault();
@@ -18,7 +19,8 @@ loginbutton.addEventListener('click', e => {
 	const promise = auth.signInWithEmailAndPassword(email, password).then(cred => {
 		console.log(cred);
 		userInfo = cred.user;
-		console.log(userInfo)
+		console.log(userInfo);
+		user = firebase.auth().currentUser;
 	})
 	promise.catch(e => console.log(e.message));
 })
@@ -40,5 +42,6 @@ logoutbutton.addEventListener('click', e => {
 })
 
 consolecreds.addEventListener('click', e => {
-	console.log (userInfo)
+	console.log (credential)
+	console.log (user.uid)
 })
