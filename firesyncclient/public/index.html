@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>FireSync</title>
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
@@ -51,11 +52,11 @@
               <h2>Create an account: </h2><br/>
               <form id="create-form">
                 <div class="input-field2">
-                    <input type="email" id="signup-email2" required />
+                    <input type="email" id="signup-email" required />
                     <label for="signup-email">Email address</label>
                 </div>
                 <div class="input-field2">
-                    <input type="password" id="signup-password2" required />
+                    <input type="password" id="signup-password" required />
                     <label for="signup-password">Password</label>
                 </div>
                 <button id="createButton"> Create this Account </button>
@@ -63,6 +64,8 @@
           </div>
         </div>
 
+        <button id="logoutButton"> Logout </button>
+        <button id="consoleCreds"> Console my creds </button>
 
 
         <div id="root"></div>
