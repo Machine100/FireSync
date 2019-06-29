@@ -1,24 +1,20 @@
 import React from 'react';
+import styled from 'styled-components'
 
-import Button from '@material-ui/core/Button';
-import AppBar from '@material-ui/core/Button';
-import Toolbar from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Button';
+const Button = styled.button`
+  background: ${props => (props.primary ? 'black' : 'white')};
+  color: ${props => (props.primary ? 'white' : 'black')};
+`
 
-
-const StyledForm = () => {
+function StyledForm () {
   return (
   
     <div>          
  
- 		<AppBar postion="static">
- 			<Toolbar>
- 				<Typography variant="title" color="inherit">
- 					React kdkdkdkdkd
- 				</Typography>
-			</Toolbar>
-		</AppBar>
-
+    <Button>A normal button</Button>
+    <Button>A normal button</Button>
+    <Button primary>The primary button</Button>
+    
 
 
 	</div>
