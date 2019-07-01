@@ -12,7 +12,6 @@ import StyledForm from './components/StyledForm'
 
 class App extends Component {
   render() {
-
   	return (
     	<div className="App">
  			<AuthBar />

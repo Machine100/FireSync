@@ -1,24 +1,32 @@
 import React from 'react';
+import styled from 'styled-components'
 
-import Button from '@material-ui/core/Button';
-import AppBar from '@material-ui/core/Button';
-import Toolbar from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Button';
+const Button = styled.button`
+  background: ${props => (props.primary ? 'garnet' : 'gold')};
+  color: ${props => (props.primary ? 'gold' : 'garnet')};
+`
 
+const Form = styled.form`
+  background: ${props => (props.primary ? 'garnet' : 'gold')};
+  color: ${props => (props.primary ? 'gold' : 'garnet')};
+`
 
-const StyledForm = () => {
+function StyledForm () {
   return (
   
     <div>          
  
- 		<AppBar postion="static">
- 			<Toolbar>
- 				<Typography variant="title" color="inherit">
- 					React kdkdkdkdkd
- 				</Typography>
-			</Toolbar>
-		</AppBar>
+    <Button>A normal button</Button>
+    <Button primary>The primary button</Button>
 
+    <Form primary>
+      First name:
+      <input type="text" name="firstname"></input><br />
+      Last name:
+      <input type="text" name="lastname"></input>
+    </Form>
+
+    
 
 
 	</div>
