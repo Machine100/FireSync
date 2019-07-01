@@ -7,6 +7,10 @@ const consolecreds = document.getElementById('consoleCreds');
 var credential;
 var user;
 
+console.log (loginForm);
+console.log (loginbutton);
+
+
 loginForm.addEventListener('submit', e => {
 	 e.preventDefault();
 }) 

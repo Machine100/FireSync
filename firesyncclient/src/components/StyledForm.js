@@ -13,20 +13,19 @@ const Form = styled.form`
 
 function StyledForm () {
   return (
-  
     <div>          
- 
-    <Button>A normal button</Button>
-    <Button primary>The primary button</Button>
-
-    <Form primary>
-      First name:
-      <input type="text" name="firstname"></input><br />
-      Last name:
-      <input type="text" name="lastname"></input>
-    </Form>
-
-    
+      
+      <form id="login-form" primary >
+        <div>
+          Email:
+          <input type="email" id="login-email" required />
+        </div>
+        <div>
+ 	  	   Password:
+           <input type="password" id="login-password" required />
+        </div>
+        <Button id="login-button"> Submit </Button>
+      </form>
 
 
 	</div>
