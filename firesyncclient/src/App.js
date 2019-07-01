@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import AuthBar from './components/AuthBar'
 import StyledForm from './components/StyledForm'
@@ -10,15 +10,16 @@ import StyledForm from './components/StyledForm'
 
 //
 
-function App() {
-  return (
-    <div className="App">
- 		<AuthBar />
- 		<StyledForm />
+class App extends Component {
+  render() {
 
-//
-    </div>
-  );
+  	return (
+    	<div className="App">
+ 			<AuthBar />
+ 			<StyledForm />
+    	</div>
+  	);
+  }
 }
 
 export default App;
