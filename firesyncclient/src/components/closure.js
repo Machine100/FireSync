@@ -40,11 +40,38 @@ f1 = () => {
         // the picure i have been drawing is an execution diagram. it shows who called who. it is not a declaretion model. js has two phases.
         // Do I also need to draw a who declared who diagram and show the relationship beween the models?
 
+        // No matter where a function is invoked from, or even how it is invoked, its lexical scope is only defined by where the function was declared.
+        // cheating the lexical scope is possible with eval and with, but do not do it.
+
+
+
         // in js you can do more than instantiate the class. You can instaantiate the methods also.
         // is there a difference between instantiating a method and placing the function into a value?
 
         // when a function is placed into a value, has it already been compiled?
-        
+
+        // The same identifier name can be specified at multiple layers of nested scope, which is called "shadowing" (the inner identifier "shadows" the outer identifier).
+        // Global variables are also automatically properties of the global object (window in browsers   window.a
+        // This technique gives access to a global variable which would otherwise be inaccessible due to it being shadowed. However, non-global shadowed variables cannot be accessed.
+
+        // identifiers as anotther word for variable
+
+        // Function scope encourages the idea that all variables belong to the function,
+        // This design approach can be quite useful, and certainly can make full use of the "dynamic" nature of JavaScript variables to take on values of different types as needed.
+
+        //  the identifier name foo itself "pollutes" the enclosing scope 
+        // We also have to explicitly call the function by name (foo()) so that the wrapped code actually executes
+        // Anonymous function expressions
+        // noww that we have a function as an expression by virtue of wrapping it in a ( ) pair, we can execute that function by adding another () on the end, like (function foo(){ .. })()
+        // iife
+        // Of course, IIFE's don't need names, necessarily -- the most common form of IIFE is to use an anonymous function expression. While certainly less common, naming an IIFE has all the aforementioned benefits over anonymous function expressions, so it's a good practice to adopt.
+
+        // In Chapter 4, we will address hoisting, which talks about declarations being taken as existing for the entire scope in which they occur.
+
+		// However, declarations made with let will not hoist to the entire scope of the block they appear in. Such declarations will not observably "exist" in the block until the declaration statement.
+
+
+
 
 }
 
