@@ -70,7 +70,9 @@ f1 = () => {
 
 		// However, declarations made with let will not hoist to the entire scope of the block they appear in. Such declarations will not observably "exist" in the block until the declaration statement.
 
+		// the return statement in a function ends execution. If there is no return, the closing } is an implicit return.
 
+		//
 
 
 }
