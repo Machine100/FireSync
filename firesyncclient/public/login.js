@@ -1,5 +1,6 @@
-const loginForm = document.querySelector('#login-form'); // why are these elements selected differently?
-const loginbutton = document.getElementById('loginButton'); // why is the button element camelcase and the form element kebob case?
+/*
+//const loginForm = document.querySelector('#login-form'); // why are these elements selected differently?
+const loginbutton = document.getElementById('.login-button.sc-bwzfXH.clwmhu'); // why is the button element camelcase and the form element kebob case?
 const createForm = document.querySelector('#create-form'); // why is this variable kabob case,
 const createbutton = document.getElementById('createButton'); // and this one is lowercase?
 const logoutbutton = document.getElementById('logoutButton');
@@ -7,13 +8,13 @@ const consolecreds = document.getElementById('consoleCreds');
 var credential;
 var user;
 
-console.log (loginForm);
+//console.log (loginForm);
 console.log (loginbutton);
 
 
-loginForm.addEventListener('submit', e => {
-	 e.preventDefault();
-}) 
+//loginForm.addEventListener('submit', e => {
+//	 e.preventDefault();
+//}) 
 
 loginbutton.addEventListener('click', e => {
 	const email = loginForm['login-email'].value;
@@ -49,3 +50,4 @@ consolecreds.addEventListener('click', e => {
 	console.log (credential)
 	console.log (user.uid)
 })
+*/
