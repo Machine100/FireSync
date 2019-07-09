@@ -72,7 +72,9 @@ f1 = () => {
 
 		// the return statement in a function ends execution. If there is no return, the closing } is an implicit return.
 
-		//
+		//() parens say make execution context.
+
+		// 
 
 
 }
