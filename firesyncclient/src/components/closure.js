@@ -1,10 +1,33 @@
+function a(){}   // a function definition. Hoisted into the lexical scope that declared it.
+(function a(){..})  // a function expression. Has it's own self-contained block scope.
+                    // without the () to execute it, it will be created and then garbage-collected.
+
+var x // hoisted into the lexical scope that declared it. will exist as long as the context exists.
+let x // Exists temporarily in the lexical scope that called it but only for as long as the 
+      // block that declared it is executing. Then is garbage-collected.
+
+// so contexts can have a(more?) block scope executing on them. It provides a service to it by
+//  providing memory space to store let&const vaiables created by the block scope. If the
+// block scope chooses to use var, the variables will remain after the block is done and not be
+// garbage collected.
+
+(function(){..})()  // an immediatly invoked function expression
+(function(){..}())  // an immediatly invoked function expression also
+(function a(){..}()) // same, but is named to help debugging. Naming these is optional.
 
 
-f1 = () => { i=1; console.log(i) }
+f1 = () => { i=1; console.log(i) }  //assign function into an anomyous value and then immediatly invoke it
+
 
 f1();
 
 --------------------------------
+function expression
+immediatly invoked function expression
+(anonymous or named) function expression
+
+
+
 
 
 f1 = () => {
