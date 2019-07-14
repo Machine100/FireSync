@@ -24,7 +24,7 @@ function StyledForm () {
  	  	   Password:
            <input type="password" id="login-password" required />
         </div>
-        <Button id="login-button"> Submit </Button>
+        <Button className="login-button"> Submit Login </Button>
       </form>
 
 
